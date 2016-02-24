@@ -1,0 +1,21 @@
+
+{% extends "base.html" %}
+
+
+{% block js %}
+{% endblock %}
+
+{% block main %}
+<div class="container">
+  <form action="{{ url_for('theform') }}" method="post">
+            username: {{ form.username }}<br />
+            fname: {{ form.fname }}<br />
+            lname: {{ form.lname }}<br />
+            age: {{ form.age }}<br />
+            sex: {{ form.sex }}<br />
+            password: {{ form.password }}<br />
+    <input type="submit" />
+            
+  </form>
+</div>
+{% endblock %}
